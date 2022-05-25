@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13018,7 +13018,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -13057,7 +13057,7 @@ ul.typeahead-list  > li > a.pull-right {
 
     </style>
 <style type="text/css">
-    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when 
+    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when
 a notebook is open. this rule won't be applied when the notebook is not open (in 404 view for example) */
 body[data-notebook-name] #menubar-container #maintoolbar:not(.show-panel),
 body[data-notebook-name] #menubar-container ul.navbar-nav:not(.show-panel) {
@@ -13091,14 +13091,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13781,7 +13781,7 @@ dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>1.</code> There are two columns (<code>day</code>,<code>fraud</code>) that are <strong>&lt;font color = 'red'&gt; categorical&lt;/font&gt;</strong> variables and 
+<p><code>1.</code> There are two columns (<code>day</code>,<code>fraud</code>) that are <strong>&lt;font color = 'red'&gt; categorical&lt;/font&gt;</strong> variables and
 need to be changed to <a href="https://www.geeksforgeeks.org/how-to-create-dummy-variables-in-python-with-pandas/">dummy variables</a> using 0, 1 encodings. <br>
 Furthermore, one dummy column from each <strong>&lt;font color = 'red'&gt; categorical&lt;/font&gt;</strong> variable will need to be dropped (from the model, not the dataframe) for the solution to be stable and the results from Python to be reliable. <br>
 Finally, an <code>intercept</code> column with a value of <code>1</code> will be inserted into the dataframe, so that the model will work.</p>
@@ -13977,27 +13977,27 @@ Finally, an <code>intercept</code> column with a value of <code>1</code> will be
         <td>Model:</td>              <td>Logit</td>       <td>No. Iterations:</td>  <td>16.0000</td>
 </tr>
 <tr>
-  <td>Dependent Variable:</td>      <td>_fraud_</td>     <td>Pseudo R-squared:</td>   <td>nan</td>  
+  <td>Dependent Variable:</td>      <td>_fraud_</td>     <td>Pseudo R-squared:</td>   <td>nan</td>
 </tr>
 <tr>
-         <td>Date:</td>        <td>2022-05-25 09:03</td>       <td>AIC:</td>          <td>inf</td>  
+         <td>Date:</td>        <td>2022-05-25 09:03</td>       <td>AIC:</td>          <td>inf</td>
 </tr>
 <tr>
-   <td>No. Observations:</td>        <td>8793</td>             <td>BIC:</td>          <td>inf</td>  
+   <td>No. Observations:</td>        <td>8793</td>             <td>BIC:</td>          <td>inf</td>
 </tr>
 <tr>
-       <td>Df Model:</td>              <td>2</td>         <td>Log-Likelihood:</td>   <td>-inf</td>  
+       <td>Df Model:</td>              <td>2</td>         <td>Log-Likelihood:</td>   <td>-inf</td>
 </tr>
 <tr>
-     <td>Df Residuals:</td>          <td>8790</td>           <td>LL-Null:</td>       <td>-inf</td>  
+     <td>Df Residuals:</td>          <td>8790</td>           <td>LL-Null:</td>       <td>-inf</td>
 </tr>
 <tr>
-      <td>Converged:</td>           <td>1.0000</td>           <td>Scale:</td>       <td>1.0000</td> 
+      <td>Converged:</td>           <td>1.0000</td>           <td>Scale:</td>       <td>1.0000</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-      <td></td>       <th>Coef.</th>  <th>Std.Err.</th>    <th>z</th>     <th>P>|z|</th> <th>[0.025</th>  <th>0.975]</th> 
+      <td></td>       <th>Coef.</th>  <th>Std.Err.</th>    <th>z</th>     <th>P>|z|</th> <th>[0.025</th>  <th>0.975]</th>
 </tr>
 <tr>
   <th>intercept</th> <td>9.8709</td>   <td>1.9438</td>  <td>5.0783</td>  <td>0.0000</td> <td>6.0613</td>  <td>13.6806</td>
@@ -14006,7 +14006,7 @@ Finally, an <code>intercept</code> column with a value of <code>1</code> will be
   <th>duration</th>  <td>-1.4637</td>  <td>0.2905</td>  <td>-5.0389</td> <td>0.0000</td> <td>-2.0331</td> <td>-0.8944</td>
 </tr>
 <tr>
-  <th>weekday</th>   <td>2.5465</td>   <td>0.9043</td>  <td>2.8160</td>  <td>0.0049</td> <td>0.7741</td>  <td>4.3188</td> 
+  <th>weekday</th>   <td>2.5465</td>   <td>0.9043</td>  <td>2.8160</td>  <td>0.0049</td> <td>0.7741</td>  <td>4.3188</td>
 </tr>
 </table>
 </div>
@@ -14237,7 +14237,7 @@ Likewise, a 15-minute transaction on a weekday  is 4.3 times more likely to be a
   </div>
 </body>
 
- 
+
 
 
 </html>
