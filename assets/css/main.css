@@ -185,7 +185,7 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
-		text-transform: uppercase;
+		
 		margin: 0 0 1rem 0;
 	}
 
@@ -2635,7 +2635,7 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 4rem 0;
-			width: 100%;
+			width: 36%;
 		}
 
 			.image.main:first-child {
